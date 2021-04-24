@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: eproveme <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/14 18:34:32 by eproveme          #+#    #+#             */
-/*   Updated: 2020/11/14 20:15:52 by eproveme         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
 static size_t	len(char const *s, char c)
@@ -22,7 +10,7 @@ static size_t	len(char const *s, char c)
 	return (i);
 }
 
-static int		count(char const *s, char c)
+static int	count(char const *s, char c)
 {
 	int			i;
 	int			l;
@@ -41,7 +29,7 @@ static int		count(char const *s, char c)
 	return (l);
 }
 
-static char		**freelloc(char **s, int i)
+static char	**freelloc(char **s, int i)
 {
 	while (i != 0)
 	{
@@ -52,7 +40,7 @@ static char		**freelloc(char **s, int i)
 	return (0);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char		**arr;
 	int			i;

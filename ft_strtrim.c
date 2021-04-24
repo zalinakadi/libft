@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: eproveme <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/10 11:54:33 by eproveme          #+#    #+#             */
-/*   Updated: 2020/11/11 15:54:39 by eproveme         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
 static int	in_set(char c, const char *set)
@@ -22,7 +10,7 @@ static int	in_set(char c, const char *set)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t		i;
 	size_t		n;

@@ -1,18 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: eproveme <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:46:36 by eproveme          #+#    #+#             */
-/*   Updated: 2020/11/12 13:37:26 by eproveme         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
-static int		count(int n)
+static int	count(int n)
 {
 	int			i;
 	long int	j;
@@ -32,14 +20,15 @@ static int		count(int n)
 	return (i);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char		*str;
 	long int	num;
 	int			i;
 
 	i = 0;
-	if (!(str = (char *)malloc(sizeof(char) * count(n) + 1)))
+	str = (char *)malloc(sizeof(char) * count(n) + 1);
+	if (!str)
 		return (0);
 	if (n < 0)
 		str[0] = '-';
